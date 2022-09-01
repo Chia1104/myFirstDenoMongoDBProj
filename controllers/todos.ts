@@ -1,5 +1,6 @@
 import { configAsync } from "https://deno.land/x/dotenv/mod.ts";
 const { DATA_API_KEY, APP_URL } = await configAsync();
+console.log(APP_URL, DATA_API_KEY);
 const BASE_URI = APP_URL;
 const DATA_SOURCE = "Cluster0";
 const DATABASE = "todo_db";
