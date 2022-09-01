@@ -1,5 +1,5 @@
-import { config } from "https://deno.land/x/dotenv/mod.ts";
-const { DATA_API_KEY, APP_ID } = await config();
+import { configAsync } from "https://deno.land/x/dotenv/mod.ts";
+const { DATA_API_KEY, APP_ID } = await configAsync();
 const BASE_URI = `https://data.mongodb-api.com/app/${APP_ID}/endpoint/data/beta/action`;
 const DATA_SOURCE = "Cluster0";
 const DATABASE = "todo_db";
